@@ -1,0 +1,256 @@
+@import 'App.scss';
+
+
+
+
+.contain-index{
+    padding: 20px;
+    background-color: #F2F3F4;
+
+    .container-header{
+        display: flex;
+        justify-content: center;
+        .header{
+            background-color: rgb(253, 253, 253);
+            // display: flex;
+            // justify-content: center;
+            width: 1250px;
+            height: 377px;
+            // text-align: -webkit-center;
+            .content{
+                background-color: rgb(255, 102, 0);
+                max-width: 1250px;
+                background-image: url('../img/fondo.jpg');
+                height: 300px;
+                background-size: cover;
+                box-shadow: 2px 2px 6px 5px rgb(0 0 0 / 20%);
+            }
+            .info-user{
+                display: flex;
+                transform: translate3d(43px, -85px, 10px);
+                width: 70%;
+                height: 161px;  
+                .container-img{
+
+                }
+                .img-info{
+                    width: 100px;
+                    background-size: cover;
+                    border: 6px solid white;
+                    border-radius: 20px;
+                    img{
+                        width: auto;
+                    }
+                }
+                .datos-info {
+                    color: white;
+                    
+                    margin-left: 55px;
+                    .Name{
+                        font-size: 25px;
+                        margin: 0px;
+                    }
+                }
+                @media (max-width: 767px){                
+                        transform: translate3d(0, -87px, 11px);
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                    
+                }
+            }
+            
+           
+        }
+
+
+        .nav-header{
+            margin-left: 45px;
+            margin-top: 38px;
+            display: flex;
+            gap: 10px;
+
+            .btn-edit{
+                
+            }
+        }
+        @media (max-width: 767px){
+            padding: 0px;
+        
+        }
+    }
+   
+    @media (max-width: 967px){
+        padding: 0px;
+    }
+}   
+
+.btn-secondary {
+    color: #fff;
+    background-color: #9cc3e1 !important;
+    border-color: #6ba2d9;
+
+    &:hover{
+        background-color: #c1d7e7 !important;
+        border-color: #3391f0;
+    }
+}
+.container-feed{
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    padding: 20px 0px;
+
+    .feed{
+        // background-color: aqua;
+        // max-width: 1250px;
+        max-width: 1281px;
+        // width: 1250px;
+        display: flex;
+    }
+
+    @media (max-width: 767px) {
+        padding: 0px;
+    }
+}
+.card{
+    box-shadow: 2px 2px 6px 5px rgb(0 0 0 / 20%);
+    border-radius: 10px;
+    margin-bottom: 33px;
+}
+.box-card{
+
+}
+.about{
+//    width: 100%; 
+
+.grid-photos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    img{
+        width: 100%;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover{
+
+            box-shadow: 2px 2px 6px 5px rgb(0 0 0 / 20%);
+            
+        }
+
+    }
+}
+.Suggest{
+    place-items: center;
+    gap : 5px;
+    margin: 5px;
+    justify-content: space-between;
+
+    .info-text{
+        color: rgb(146, 139, 139);
+        font-size: 12px;
+        font-style: italic;
+        margin: 0px;
+    }
+}
+
+.text-muted {
+    color: #6c757d!important;
+    margin: 0px !important;
+}
+.twwi{
+    color: #3391f0;
+    display: flex;
+    justify-content: center;
+
+    &:hover{
+        color: #6fa7de;  
+    }
+}
+
+}
+.CardFeedPage
+{   
+    padding: 0px 0px  ;
+    .bodyCardFeedPage{
+   
+    }
+    .container-titulo{
+        padding: 0px 11px 0px;
+        align-items: center;
+        .info{
+            padding-left: 15px;
+        }
+        h6{
+            margin: 0px !important;
+        }
+        .info-text
+        {
+            color: rgb(146, 139, 139);
+            font-size: 12px;
+            font-style: italic;
+        }
+        .comment{
+            padding: 5px 22px;
+            font-size: 14px;
+            color: #898b8f;
+        }
+       
+    }
+    .photo-feed{
+        padding-bottom: 10px;
+        img{
+        width: 100%;
+        border-radius: 13px;
+
+        }
+    }
+    .add-comment{
+        padding-bottom: 10px;
+    }
+    .footer-photo{
+        display: flex;
+        gap: 5px;
+        width: 100%;
+
+        .share{
+            display: flex;
+            gap: 5px;
+        }
+    }
+}
+.img-publicacion{
+    max-width: 50px;
+    border-radius: 28px;
+}
+.container-publicacion
+{
+
+}
+
+@media (max-width: 967px) {
+    .col-3{
+        display: none;
+    }
+    .botones-nav{
+
+    }
+    .contain-index .container-header .nav-header {
+        /* margin-left: 45px; */
+        margin-top: 38px;
+        display: flex;
+        gap: 10px;
+        position: absolute;
+        justify-content: center;
+        left: 5px;
+        top: 147px;
+        /* width: 100%; */
+        z-index: 9;
+        margin: 0;
+    }
+    .CardFeedPage {
+        padding: 0px 0px;
+        margin-top: 46px;
+    }
+}
